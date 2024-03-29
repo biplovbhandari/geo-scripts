@@ -26,7 +26,8 @@ Once the environemtn is installed, activate it using (replace with your environm
 
 
 ### Usage
+*Hint: You can do `python name-of-script.py -h` to understand the input, output and parameters relating to the script.*
 
-1. `python tiff-2-tiles.py -i="/Users/bbhandar/Downloads/nlcms/tiffs" -o="/Users/bbhandar/Downloads/nlcms/tiles/" -t=512`
+1. `python tiff-2-tiles.py -i="downloads/tiffs" -o="downloads/tiles" -t=512`
 
-You can do `python name-of-script.py -h` to understand the input, output and parameters relating to the script.
+2. `python tiles-2-tiff.py -i="downloads/tiles" -o="downloads/tiffs/merged.tif"`
