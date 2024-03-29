@@ -59,7 +59,8 @@ def tile_raster(input_folder, output_folder, tile_size=(512, 512)):
                     "driver": "GTiff",
                     "height": window.height,
                     "width": window.width,
-                    "transform": transform
+                    "transform": transform,
+                    "compress": "lzw",
                 })
 
                 output_filename = f"{filepath.stem}_tile_{int(window.col_off)}_{int(window.row_off)}.tif"
