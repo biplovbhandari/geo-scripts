@@ -36,7 +36,8 @@ def merge_tiles(input_dir, output_file):
                     "height": mosaic.shape[1],
                     "width": mosaic.shape[2],
                     "transform": out_trans,
-                    "crs": src.crs
+                    "crs": src.crs,
+                    "compress": "lzw",
                     })
 
     # Write the mosaic raster to disk
